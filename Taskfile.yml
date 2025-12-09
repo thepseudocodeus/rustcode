@@ -1,0 +1,21 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    desc: "Show available commands"
+    cmds:
+      - task -a
+    silent: true
+
+  add-rustfmt:
+    desc: "Initialize project"
+    cmds:
+      - rustup default stable
+      - rustup component add rustfmt
+
+  fmt:
+    desc: "Format the code"
+    cmds:
+      - cargo fmt
