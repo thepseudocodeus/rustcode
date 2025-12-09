@@ -2,6 +2,9 @@
 
 version: '3'
 
+vars:
+  CRNAME: '{{.NAME}}'
+
 tasks:
   default:
     desc: "Show available commands"
@@ -19,3 +22,24 @@ tasks:
     desc: "Format the code"
     cmds:
       - cargo fmt
+
+  new:lib:
+    desc: "Create a new rust library"
+    cmds:
+      - cargo new --lib {{.CRNAME}}
+
+  new:bin:
+    desc: "Create new rust binary"
+    cmds:
+      - cargo new {{.CRNAME}}
+
+  run:tests:
+    desc: "Run rust tests"
+    cmds:
+      - cargo test
+
+  init:libs:
+    desc: "Setup all libraries"
+    cmds:
+      - cargo new --lib utils
+

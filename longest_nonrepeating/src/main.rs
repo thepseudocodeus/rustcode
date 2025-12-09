@@ -34,7 +34,6 @@ impl Solution {
 //     assert_eq!(result, expected);
 // }
 
-
 fn main() {
     let s = String::from("abcabcbb");
     println!("Input: {}", s);

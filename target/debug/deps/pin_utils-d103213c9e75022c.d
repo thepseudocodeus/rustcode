@@ -1,0 +1,9 @@
+/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/deps/pin_utils-d103213c9e75022c.d: /Users/ajigherighe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pin-utils-0.1.0/src/lib.rs /Users/ajigherighe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pin-utils-0.1.0/src/stack_pin.rs /Users/ajigherighe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pin-utils-0.1.0/src/projection.rs
+
+/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/deps/libpin_utils-d103213c9e75022c.rlib: /Users/ajigherighe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pin-utils-0.1.0/src/lib.rs /Users/ajigherighe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pin-utils-0.1.0/src/stack_pin.rs /Users/ajigherighe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pin-utils-0.1.0/src/projection.rs
+
+/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/deps/libpin_utils-d103213c9e75022c.rmeta: /Users/ajigherighe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pin-utils-0.1.0/src/lib.rs /Users/ajigherighe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pin-utils-0.1.0/src/stack_pin.rs /Users/ajigherighe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pin-utils-0.1.0/src/projection.rs
+
+/Users/ajigherighe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pin-utils-0.1.0/src/lib.rs:
+/Users/ajigherighe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pin-utils-0.1.0/src/stack_pin.rs:
+/Users/ajigherighe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pin-utils-0.1.0/src/projection.rs:
