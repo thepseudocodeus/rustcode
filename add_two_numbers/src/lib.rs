@@ -46,7 +46,10 @@ impl ListNode {
 pub struct Solution;
 
 impl Solution {
-    pub fn add_two_numbers(mut l1: Option<Box<ListNode>>, mut l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    pub fn add_two_numbers(
+        mut l1: Option<Box<ListNode>>,
+        mut l2: Option<Box<ListNode>>,
+    ) -> Option<Box<ListNode>> {
         // Use the dummy pattern
         let mut dummy = ListNode::new(0);
         let mut cursor = &mut dummy.next;
@@ -68,13 +71,12 @@ fn add(x: i32, y: i32) -> i32 {
     x + y
 }
 
-
 #[cfg(test)]
 mod tests {
     use super::*;
 
     fn to_list() -> Option<Box<ListNode>> {
-       None
+        None
     }
 
     #[test]

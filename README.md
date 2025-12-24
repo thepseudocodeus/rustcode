@@ -1,5 +1,10 @@
 
 
+## Active
+- [ ] #2: Add Two Numbers
+
+## Done
+- [x] #1: Two Sum
 
 ## Problem Backlog
 - [ ] 206
