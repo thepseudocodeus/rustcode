@@ -1,32 +1,14 @@
-   0.016797417s  INFO prepare_target{force=false package_id=two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum) target="two_sum"}: cargo::core::compiler::fingerprint: stale: changed "/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum/src/lib.rs"
-   0.016811042s  INFO prepare_target{force=false package_id=two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum) target="two_sum"}: cargo::core::compiler::fingerprint:           (vs) "/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/.fingerprint/two_sum-4ab1168baf48ca70/dep-lib-two_sum"
-   0.016813792s  INFO prepare_target{force=false package_id=two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum) target="two_sum"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1766609045, nanos: 398029695 } < FileTime { seconds: 1766609066, nanos: 779344846 }
-   0.016867250s  INFO prepare_target{force=false package_id=two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum) target="two_sum"}: cargo::core::compiler::fingerprint: fingerprint dirty for two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("two_sum", ["lib"], "/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum/src/lib.rs", Edition2024) }
-   0.016875625s  INFO prepare_target{force=false package_id=two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum) target="two_sum"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/.fingerprint/two_sum-4ab1168baf48ca70/dep-lib-two_sum", reference_mtime: FileTime { seconds: 1766609045, nanos: 398029695 }, stale: "/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum/src/lib.rs", stale_mtime: FileTime { seconds: 1766609066, nanos: 779344846 } }))
-   0.018557459s  INFO prepare_target{force=false package_id=two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum) target="two_sum"}: cargo::core::compiler::fingerprint: fingerprint error for two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("two_sum", ["lib"], "/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum/src/lib.rs", Edition2024) }
-   0.018565500s  INFO prepare_target{force=false package_id=two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum) target="two_sum"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/.fingerprint/two_sum-436f2d85d2a95ccf/test-lib-two_sum`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: std::backtrace::Backtrace::create
-   1: std::backtrace::Backtrace::capture
-   2: cargo_util::paths::read_bytes
-   3: cargo_util::paths::read
-   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
-   5: cargo::core::compiler::fingerprint::prepare_target
-   6: cargo::core::compiler::compile
-   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   8: cargo::ops::cargo_compile::compile_ws
-   9: cargo::ops::cargo_compile::compile_with_exec
-  10: cargo::ops::cargo_compile::compile
-  11: cargo::commands::check::exec
-  12: <cargo::cli::Exec>::exec
-  13: cargo::main
-  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  15: std::rt::lang_start::<()>::{closure#0}
-  16: std::rt::lang_start_internal
-  17: _main
-    Checking two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum)
-error: could not compile `two_sum` (lib test) due to 4 previous errors; 1 warning emitted
+   0.018704958s  INFO prepare_target{force=false package_id=add_two_numbers v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers) target="add_two_numbers"}: cargo::core::compiler::fingerprint: stale: changed "/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers/src/lib.rs"
+   0.018719833s  INFO prepare_target{force=false package_id=add_two_numbers v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers) target="add_two_numbers"}: cargo::core::compiler::fingerprint:           (vs) "/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/.fingerprint/add_two_numbers-9022c0f84d7127bf/dep-lib-add_two_numbers"
+   0.018723250s  INFO prepare_target{force=false package_id=add_two_numbers v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers) target="add_two_numbers"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1766612467, nanos: 608844989 } < FileTime { seconds: 1766613730, nanos: 207180303 }
+   0.018784666s  INFO prepare_target{force=false package_id=add_two_numbers v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers) target="add_two_numbers"}: cargo::core::compiler::fingerprint: fingerprint dirty for add_two_numbers v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("add_two_numbers", ["lib"], "/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers/src/lib.rs", Edition2024) }
+   0.018795125s  INFO prepare_target{force=false package_id=add_two_numbers v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers) target="add_two_numbers"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/.fingerprint/add_two_numbers-9022c0f84d7127bf/dep-lib-add_two_numbers", reference_mtime: FileTime { seconds: 1766612467, nanos: 608844989 }, stale: "/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers/src/lib.rs", stale_mtime: FileTime { seconds: 1766613730, nanos: 207180303 } }))
+   0.019038250s  INFO prepare_target{force=false package_id=add_two_numbers v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers) target="add_two_numbers"}: cargo::core::compiler::fingerprint: stale: changed "/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers/src/lib.rs"
+   0.019042958s  INFO prepare_target{force=false package_id=add_two_numbers v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers) target="add_two_numbers"}: cargo::core::compiler::fingerprint:           (vs) "/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/.fingerprint/add_two_numbers-e4387f3ca91c8dd1/dep-test-lib-add_two_numbers"
+   0.019045291s  INFO prepare_target{force=false package_id=add_two_numbers v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers) target="add_two_numbers"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1766612467, nanos: 608838530 } < FileTime { seconds: 1766613730, nanos: 207180303 }
+   0.019097541s  INFO prepare_target{force=false package_id=add_two_numbers v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers) target="add_two_numbers"}: cargo::core::compiler::fingerprint: fingerprint dirty for add_two_numbers v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("add_two_numbers", ["lib"], "/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers/src/lib.rs", Edition2024) }
+   0.019104458s  INFO prepare_target{force=false package_id=add_two_numbers v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers) target="add_two_numbers"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/.fingerprint/add_two_numbers-e4387f3ca91c8dd1/dep-test-lib-add_two_numbers", reference_mtime: FileTime { seconds: 1766612467, nanos: 608838530 }, stale: "/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers/src/lib.rs", stale_mtime: FileTime { seconds: 1766613730, nanos: 207180303 } }))
+    Checking add_two_numbers v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/add_two_numbers)
+error: could not compile `add_two_numbers` (lib) due to 2 previous errors; 6 warnings emitted
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `add_two_numbers` (lib test) due to 2 previous errors; 6 warnings emitted
