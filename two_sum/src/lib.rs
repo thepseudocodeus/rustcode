@@ -1,5 +1,3 @@
-use std::collections::HashMap;
-
 /*
    #1: Two Sum
 
@@ -36,6 +34,7 @@ use std::collections::HashMap;
 
    Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 */
+use std::collections::HashMap;
 
 pub struct Solution;
 

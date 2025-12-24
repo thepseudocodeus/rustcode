@@ -5,3 +5,4 @@ edition = "2024"
 
 [dependencies]
 two_sum = { path = "../two_sum" }
+add_two_numbers = { path = "../add_two_numbers" }

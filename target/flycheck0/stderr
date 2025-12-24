@@ -1,12 +1,52 @@
-   0.018225959s  INFO prepare_target{force=false package_id=run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run) target="run"}: cargo::core::compiler::fingerprint: stale: changed "/Users/ajigherighe/Code/2025/Portfolio/rustcode/run/src/main.rs"
-   0.018244084s  INFO prepare_target{force=false package_id=run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run) target="run"}: cargo::core::compiler::fingerprint:           (vs) "/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/.fingerprint/run-0a4a0653e17b0f51/dep-bin-run"
-   0.018246917s  INFO prepare_target{force=false package_id=run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run) target="run"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1766614836, nanos: 190506409 } < FileTime { seconds: 1766615246, nanos: 302653627 }
-   0.018326000s  INFO prepare_target{force=false package_id=run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run) target="run"}: cargo::core::compiler::fingerprint: fingerprint dirty for run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run)/Check { test: false }/TargetInner { name: "run", doc: true, ..: with_path("/Users/ajigherighe/Code/2025/Portfolio/rustcode/run/src/main.rs", Edition2024) }
-   0.018333250s  INFO prepare_target{force=false package_id=run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run) target="run"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/.fingerprint/run-0a4a0653e17b0f51/dep-bin-run", reference_mtime: FileTime { seconds: 1766614836, nanos: 190506409 }, stale: "/Users/ajigherighe/Code/2025/Portfolio/rustcode/run/src/main.rs", stale_mtime: FileTime { seconds: 1766615246, nanos: 302653627 } }))
-   0.020435917s  INFO prepare_target{force=false package_id=run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run) target="run"}: cargo::core::compiler::fingerprint: stale: changed "/Users/ajigherighe/Code/2025/Portfolio/rustcode/run/src/main.rs"
-   0.020442042s  INFO prepare_target{force=false package_id=run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run) target="run"}: cargo::core::compiler::fingerprint:           (vs) "/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/.fingerprint/run-d3fb262935d615b0/dep-test-bin-run"
-   0.020444000s  INFO prepare_target{force=false package_id=run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run) target="run"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1766614836, nanos: 190441659 } < FileTime { seconds: 1766615246, nanos: 302653627 }
-   0.020562959s  INFO prepare_target{force=false package_id=run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run) target="run"}: cargo::core::compiler::fingerprint: fingerprint dirty for run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run)/Check { test: true }/TargetInner { name: "run", doc: true, ..: with_path("/Users/ajigherighe/Code/2025/Portfolio/rustcode/run/src/main.rs", Edition2024) }
-   0.020584209s  INFO prepare_target{force=false package_id=run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run) target="run"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/.fingerprint/run-d3fb262935d615b0/dep-test-bin-run", reference_mtime: FileTime { seconds: 1766614836, nanos: 190441659 }, stale: "/Users/ajigherighe/Code/2025/Portfolio/rustcode/run/src/main.rs", stale_mtime: FileTime { seconds: 1766615246, nanos: 302653627 } }))
+   0.035953709s  INFO prepare_target{force=false package_id=run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run) target="run"}: cargo::core::compiler::fingerprint: fingerprint error for run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run)/Check { test: false }/TargetInner { name: "run", doc: true, ..: with_path("/Users/ajigherighe/Code/2025/Portfolio/rustcode/run/src/main.rs", Edition2024) }
+   0.035974375s  INFO prepare_target{force=false package_id=run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run) target="run"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/.fingerprint/run-fdfd021257708bcc/bin-run`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+  17: _main
+   0.043827042s  INFO prepare_target{force=false package_id=run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run) target="run"}: cargo::core::compiler::fingerprint: fingerprint error for run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run)/Check { test: true }/TargetInner { name: "run", doc: true, ..: with_path("/Users/ajigherighe/Code/2025/Portfolio/rustcode/run/src/main.rs", Edition2024) }
+   0.043841209s  INFO prepare_target{force=false package_id=run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run) target="run"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/.fingerprint/run-c4323c904243b2f4/test-bin-run`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+  17: _main
     Checking run v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/run)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.07s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.21s

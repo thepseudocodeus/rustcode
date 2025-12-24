@@ -1,4 +1,5 @@
 use two_sum::Solution;
+use add_two_numbers::to_list;
 
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
@@ -38,15 +39,17 @@ fn main() {
     }
 }
 
-fn to_list(nums: Vec<i32>) -> Option<Box<ListNode>> {
-    let mut dummy = ListNode::new(0);
-    let mut cursor = &mut dummy.next;
-    for &num in nums.iter() {
-        *cursor = Some(Box::new(ListNode::new(num)));
-        cursor = &mut cursor.as_mut().unwrap().next;
-    }
-    dummy.next
-}
+// fn to_list(nums: Vec<i32>) -> Option<Box<ListNode>> {
+//     let mut dummy = ListNode::new(0);
+//     let mut cursor = &mut dummy.next;
+//     for &num in nums.iter() {
+//         *cursor = Some(Box::new(ListNode::new(num)));
+//         cursor = &mut cursor.as_mut().unwrap().next;
+//     }
+//     dummy.next
+// }
+
+// fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) {}
 
 fn run_two_sum(numbers: &Vec<i32>, target: i32) -> Vec<i32> {
     Solution::two_sum(numbers.to_vec(), target)

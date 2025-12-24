@@ -52,19 +52,29 @@ impl Solution {
     ) -> Option<Box<ListNode>> {
         // Use the dummy pattern
         let mut dummy = ListNode::new(0);
-        let mut cursor = &mut dummy.next;
-        let mut carry = 0;
+        // let mut cursor = &mut dummy.next;
+        // let mut carry = 0;
 
-        while l1.is_some() || l2.is_some() || carry != 0 {
-            let mut sum = carry;
-            println!("carry: {}", carry);
-            println!("sum: {}", sum);
-            println!("l1: {}", &l1.unwrap().val);
-            println!("l2: {}", l2.unwrap().val);
-        }
+        println!("dummy: {}", dummy.val);
+        // while l1.is_some() || l2.is_some() || carry != 0 {
+            // let mut sum = carry;
+            // println!("carry: {}", carry);
+            // println!("sum: {}", sum);
+        // }
 
         dummy.next
     }
+}
+
+pub fn to_list(numbers: Vec<i32>) -> Option<Box<ListNode>> {
+    let mut dummy = ListNode::new(0);
+    let mut cursor = &mut dummy.next;
+    for &number in numbers.iter() {
+        *cursor = Some(Box::new(ListNode::new(number)));
+        cursor = &mut cursor.as_mut().unwrap().next;
+
+    }
+    dummy.next
 }
 
 fn add(x: i32, y: i32) -> i32 {
