@@ -28,14 +28,37 @@ fn main() {
         }
     }
 
-    // Create a linked list
-    let mut l1 = to_list(vec![2, 5, 7]);
+    // Create linked lists
+    let mut l1 = to_list(vec![2, 4, 3]);
+    let mut l2 = to_list(vec![5, 6, 4]);
+    let mut carry = 0;
 
-    while l1.is_some() {
+    while l1.is_some() || l2.is_some() || carry != 0 {
+        let mut sum = carry;
+
+        // Add l1 value
+        // Advance to l1.next
         if let Some(node) = l1 {
-            println!("Node Value: {}", node.val);
+            println!("Current Value: {}", node.val);
+            sum += node.val;
+            println!("Current Sum: {}", sum);
             l1 = node.next;
         }
+
+        // Add l2 value
+        // Advance to l2.next
+        if let Some(node) = l2 {
+            println!("Current Value: {}", node.val);
+            sum += node.val;
+            println!("Current Sum: {}", sum);
+            l2 = node.next;
+        }
+
+        // Update carry
+        carry = sum / 10;
+        println!("Current Carry: {}", carry);
+
+        // [] TODO: updated current cursor
     }
 }
 
