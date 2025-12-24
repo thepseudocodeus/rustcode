@@ -1,9 +1,9 @@
 # https://taskfile.dev
 
-version: '3'
+version: "3"
 
 vars:
-  CRNAME: '{{.NAME}}'
+  CRNAME: "{{.NAME}}"
 
 tasks:
   default:
@@ -23,23 +23,27 @@ tasks:
     cmds:
       - cargo fmt
 
-  new:lib:
+  new-lib:
     desc: "Create a new rust library"
     cmds:
       - cargo new --lib {{.CRNAME}}
 
-  new:bin:
+  new-bin:
     desc: "Create new rust binary"
     cmds:
       - cargo new {{.CRNAME}}
 
-  run:tests:
+  run-tests:
     desc: "Run rust tests"
     cmds:
       - cargo test
 
-  init:libs:
+  init-libs:
     desc: "Setup all libraries"
     cmds:
       - cargo new --lib utils
 
+  run:
+    desc: "Run binary"
+    cmds:
+      - cargo run -p {{.CRNAME}}
