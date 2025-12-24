@@ -1,3 +1,3 @@
 [workspace]
 resolver = "3"
-members = [ "cli","longest_nonrepeating", "two_sum"]
+members = [ "longest_nonrepeating", "two_sum"]

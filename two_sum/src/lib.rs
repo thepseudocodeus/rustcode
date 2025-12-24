@@ -31,13 +31,14 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
+    fn test_two_sum() -> Vec<i32> {
+
+    }
 
     #[rstest]
-    #[case(1, 3, 4)]
-    #[case(7, 3, 10)]
-    #[case(17, 21, 38)]
-    fn it_works(#[case] a:u64, #[case] b: u64, #[case] expected: u64) {
-        let result = TwoSum::add(a, b);
+    #[case([2, 7, 11, 15], 9, [0, 1])]
+    fn it_works(#[case] a:Vec<i32>, #[case] b: Vec<i32>, #[case] expected: u64) {
+        let result = Solution::two_sum(a, b);
         assert_eq!(result, expected);
     }
 }

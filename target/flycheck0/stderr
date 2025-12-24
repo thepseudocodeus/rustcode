@@ -1,12 +1,32 @@
-   0.006067412s  INFO prepare_target{force=false package_id=longest_nonrepeating v0.1.0 (/home/pseudocodeus/Code/rustcode/longest_nonrepeating) target="longest_nonrepeating"}: cargo::core::compiler::fingerprint: stale: changed "/home/pseudocodeus/Code/rustcode/longest_nonrepeating/src/main.rs"
-   0.006073741s  INFO prepare_target{force=false package_id=longest_nonrepeating v0.1.0 (/home/pseudocodeus/Code/rustcode/longest_nonrepeating) target="longest_nonrepeating"}: cargo::core::compiler::fingerprint:           (vs) "/home/pseudocodeus/Code/rustcode/target/debug/.fingerprint/longest_nonrepeating-b3226754f2af29ed/dep-bin-longest_nonrepeating"
-   0.006075838s  INFO prepare_target{force=false package_id=longest_nonrepeating v0.1.0 (/home/pseudocodeus/Code/rustcode/longest_nonrepeating) target="longest_nonrepeating"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1765255347, nanos: 72657852 } < FileTime { seconds: 1765257115, nanos: 135348888 }
-   0.006092001s  INFO prepare_target{force=false package_id=longest_nonrepeating v0.1.0 (/home/pseudocodeus/Code/rustcode/longest_nonrepeating) target="longest_nonrepeating"}: cargo::core::compiler::fingerprint: fingerprint dirty for longest_nonrepeating v0.1.0 (/home/pseudocodeus/Code/rustcode/longest_nonrepeating)/Check { test: false }/TargetInner { name: "longest_nonrepeating", doc: true, ..: with_path("/home/pseudocodeus/Code/rustcode/longest_nonrepeating/src/main.rs", Edition2024) }
-   0.006101048s  INFO prepare_target{force=false package_id=longest_nonrepeating v0.1.0 (/home/pseudocodeus/Code/rustcode/longest_nonrepeating) target="longest_nonrepeating"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/pseudocodeus/Code/rustcode/target/debug/.fingerprint/longest_nonrepeating-b3226754f2af29ed/dep-bin-longest_nonrepeating", reference_mtime: FileTime { seconds: 1765255347, nanos: 72657852 }, stale: "/home/pseudocodeus/Code/rustcode/longest_nonrepeating/src/main.rs", stale_mtime: FileTime { seconds: 1765257115, nanos: 135348888 } }))
-   0.006215534s  INFO prepare_target{force=false package_id=longest_nonrepeating v0.1.0 (/home/pseudocodeus/Code/rustcode/longest_nonrepeating) target="longest_nonrepeating"}: cargo::core::compiler::fingerprint: stale: changed "/home/pseudocodeus/Code/rustcode/longest_nonrepeating/src/main.rs"
-   0.006217522s  INFO prepare_target{force=false package_id=longest_nonrepeating v0.1.0 (/home/pseudocodeus/Code/rustcode/longest_nonrepeating) target="longest_nonrepeating"}: cargo::core::compiler::fingerprint:           (vs) "/home/pseudocodeus/Code/rustcode/target/debug/.fingerprint/longest_nonrepeating-23db33326f3dd36e/dep-test-bin-longest_nonrepeating"
-   0.006219011s  INFO prepare_target{force=false package_id=longest_nonrepeating v0.1.0 (/home/pseudocodeus/Code/rustcode/longest_nonrepeating) target="longest_nonrepeating"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1765255347, nanos: 72657852 } < FileTime { seconds: 1765257115, nanos: 135348888 }
-   0.006227881s  INFO prepare_target{force=false package_id=longest_nonrepeating v0.1.0 (/home/pseudocodeus/Code/rustcode/longest_nonrepeating) target="longest_nonrepeating"}: cargo::core::compiler::fingerprint: fingerprint dirty for longest_nonrepeating v0.1.0 (/home/pseudocodeus/Code/rustcode/longest_nonrepeating)/Check { test: true }/TargetInner { name: "longest_nonrepeating", doc: true, ..: with_path("/home/pseudocodeus/Code/rustcode/longest_nonrepeating/src/main.rs", Edition2024) }
-   0.006233863s  INFO prepare_target{force=false package_id=longest_nonrepeating v0.1.0 (/home/pseudocodeus/Code/rustcode/longest_nonrepeating) target="longest_nonrepeating"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/pseudocodeus/Code/rustcode/target/debug/.fingerprint/longest_nonrepeating-23db33326f3dd36e/dep-test-bin-longest_nonrepeating", reference_mtime: FileTime { seconds: 1765255347, nanos: 72657852 }, stale: "/home/pseudocodeus/Code/rustcode/longest_nonrepeating/src/main.rs", stale_mtime: FileTime { seconds: 1765257115, nanos: 135348888 } }))
-    Checking longest_nonrepeating v0.1.0 (/home/pseudocodeus/Code/rustcode/longest_nonrepeating)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.02s
+   0.016797417s  INFO prepare_target{force=false package_id=two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum) target="two_sum"}: cargo::core::compiler::fingerprint: stale: changed "/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum/src/lib.rs"
+   0.016811042s  INFO prepare_target{force=false package_id=two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum) target="two_sum"}: cargo::core::compiler::fingerprint:           (vs) "/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/.fingerprint/two_sum-4ab1168baf48ca70/dep-lib-two_sum"
+   0.016813792s  INFO prepare_target{force=false package_id=two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum) target="two_sum"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1766609045, nanos: 398029695 } < FileTime { seconds: 1766609066, nanos: 779344846 }
+   0.016867250s  INFO prepare_target{force=false package_id=two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum) target="two_sum"}: cargo::core::compiler::fingerprint: fingerprint dirty for two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("two_sum", ["lib"], "/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum/src/lib.rs", Edition2024) }
+   0.016875625s  INFO prepare_target{force=false package_id=two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum) target="two_sum"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/.fingerprint/two_sum-4ab1168baf48ca70/dep-lib-two_sum", reference_mtime: FileTime { seconds: 1766609045, nanos: 398029695 }, stale: "/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum/src/lib.rs", stale_mtime: FileTime { seconds: 1766609066, nanos: 779344846 } }))
+   0.018557459s  INFO prepare_target{force=false package_id=two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum) target="two_sum"}: cargo::core::compiler::fingerprint: fingerprint error for two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("two_sum", ["lib"], "/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum/src/lib.rs", Edition2024) }
+   0.018565500s  INFO prepare_target{force=false package_id=two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum) target="two_sum"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ajigherighe/Code/2025/Portfolio/rustcode/target/debug/.fingerprint/two_sum-436f2d85d2a95ccf/test-lib-two_sum`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+  17: _main
+    Checking two_sum v0.1.0 (/Users/ajigherighe/Code/2025/Portfolio/rustcode/two_sum)
+error: could not compile `two_sum` (lib test) due to 4 previous errors; 1 warning emitted
