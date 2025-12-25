@@ -1,5 +1,5 @@
-use two_sum::Solution;
 use add_two_numbers::to_list;
+use two_sum::Solution;
 
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
@@ -31,6 +31,8 @@ fn main() {
     // Create linked lists
     let mut l1 = to_list(vec![2, 4, 3]);
     let mut l2 = to_list(vec![5, 6, 4]);
+    let mut dummy = ListNode::new(0);
+    let mut cursor = &mut dummy.next;
     let mut carry = 0;
 
     while l1.is_some() || l2.is_some() || carry != 0 {
@@ -59,7 +61,40 @@ fn main() {
         println!("Current Carry: {}", carry);
 
         // [] TODO: updated current cursor
+        *cursor = Some(Box::new(ListNode::new(sum % 10)));
+        // Move reference to next
+        cursor = &mut cursor.as_mut().unwrap().next;
     }
+
+    // for &node in dummy.next.as_ref().iter() {
+    //     println!("Current Value: {}", node.val);
+    // }
+
+    // show_llist(dummy.next);
+    let result = to_vec(dummy.next);
+    println!("Result: {:?}", result);
+}
+
+fn show_llist(head: Option<Box<ListNode>>) {
+    println!("Printing linked list");
+    let mut cursor = &head;
+    while let Some(node) = cursor {
+        println!("Current Value: {}", node.val);
+        cursor = &node.next;
+    }
+}
+
+fn to_vec(head: Option<Box<ListNode>>) -> Vec<i32> {
+    let mut result = Vec::new();
+    let mut cursor = &head;
+
+    while let Some(node) = cursor {
+        result.push(node.val);
+        cursor = &node.next;
+    }
+
+    result
+
 }
 
 // fn to_list(nums: Vec<i32>) -> Option<Box<ListNode>> {

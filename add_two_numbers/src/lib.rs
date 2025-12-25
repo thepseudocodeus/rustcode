@@ -57,9 +57,9 @@ impl Solution {
 
         println!("dummy: {}", dummy.val);
         // while l1.is_some() || l2.is_some() || carry != 0 {
-            // let mut sum = carry;
-            // println!("carry: {}", carry);
-            // println!("sum: {}", sum);
+        // let mut sum = carry;
+        // println!("carry: {}", carry);
+        // println!("sum: {}", sum);
         // }
 
         dummy.next
@@ -72,7 +72,6 @@ pub fn to_list(numbers: Vec<i32>) -> Option<Box<ListNode>> {
     for &number in numbers.iter() {
         *cursor = Some(Box::new(ListNode::new(number)));
         cursor = &mut cursor.as_mut().unwrap().next;
-
     }
     dummy.next
 }
