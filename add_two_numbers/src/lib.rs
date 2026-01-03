@@ -38,7 +38,7 @@ pub struct ListNode {
 
 impl ListNode {
     #[inline]
-    fn new(val: i32) -> Self {
+    pub fn new(val: i32) -> Self {
         ListNode { next: None, val }
     }
 }
@@ -47,21 +47,46 @@ pub struct Solution;
 
 impl Solution {
     pub fn add_two_numbers(
-        mut l1: Option<Box<ListNode>>,
-        mut l2: Option<Box<ListNode>>,
+        l1: Option<Box<ListNode>>,
+        l2: Option<Box<ListNode>>,
     ) -> Option<Box<ListNode>> {
+        // Issue: had to transform to mutable for my algorithm
+        let mut l1 = l1;
+        let mut l2 = l2;
+
         // Use the dummy pattern
         let mut dummy = ListNode::new(0);
-        // let mut cursor = &mut dummy.next;
-        // let mut carry = 0;
+        let mut current = &mut dummy.next;
+        let mut carry = 0;
 
         println!("dummy: {}", dummy.val);
-        // while l1.is_some() || l2.is_some() || carry != 0 {
-        // let mut sum = carry;
-        // println!("carry: {}", carry);
-        // println!("sum: {}", sum);
-        // }
+        // IF list1 has nodes OR list2 has nodes OR carry NOT 0 LOOP
+        while l1.is_some() || l2.is_some() || carry != 0 {
+            let mut sum = carry;
 
+            // START LIST1
+            // ADD node value
+            if let Some(node) = l1 {
+                sum += node.val;
+                // NEXT l1 node
+                l1 = node.next;
+            }
+
+            if let Some(node) = l2 {
+                sum += node.val;
+                // NEXT l2 node
+                l2 = node.next;
+            }
+
+            carry = sum / 10;
+            let new_value = sum % 10;
+
+            *current = Some(Box::new(ListNode::new(new_value)));
+            current = &mut current.as_mut().unwrap().next;
+
+        }
+
+        // Return dummy after head
         dummy.next
     }
 }
